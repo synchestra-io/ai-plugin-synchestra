@@ -1,8 +1,11 @@
 {
-  "name": "synchestra-plugin",
-  "description": "Synchestra plugin with skills & agents",
+  "name": "synchestra-cli",
+  "description": "Synchestra CLI plugin: skills, commands, and hooks that teach AI agents how to use the synchestra CLI",
   "version": "0.0.1",
   "author": {
     "name": "Synchestra.io"
-  }
+  },
+  "homepage": "https://github.com/synchestra-io/ai-plugin-synchestra",
+  "repository": "https://github.com/synchestra-io/ai-plugin-synchestra",
+  "license": "MIT"
 }

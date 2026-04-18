@@ -31,7 +31,7 @@ A change in the CLI surface typically produces a matching skill update in this r
 
 ## License
 
-Apache 2.0 — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).
 
 ## Outstanding Questions
 
