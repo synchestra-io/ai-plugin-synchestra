@@ -122,7 +122,7 @@ Core principles (see the [agent-skills spec](../../spec/features/agent-skills/RE
 
 ## Distribution
 
-Skills are currently co-located with the CLI in this repository. They are built as a **separate, platform-independent release artifact** (`synchestra-skills-v{version}.tar.gz`) alongside the per-platform CLI binaries.
+Skills live in the dedicated [`ai-plugin-synchestra`](https://github.com/synchestra-io/ai-plugin-synchestra) repository, separate from the CLI source. They are built as a platform-independent release artifact (`synchestra-skills-v{version}.tar.gz`).
 
 Users install skills via:
 
@@ -130,9 +130,9 @@ Users install skills via:
 synchestra skill install
 ```
 
-This downloads the skills bundle matching the installed CLI version from GitHub releases and extracts it to the user's skills directory (e.g., `~/.claude/skills/`).
+This downloads the latest plugin release and extracts it to the user's skills directory (e.g., `~/.claude/skills/`). Planned future channel: `install.synchestra.io/skills` for a branded install URL.
 
-**Future:** Once the project matures toward beta, skills will move to a dedicated `synchestra-skills` repository. This will allow skills to evolve independently of the CLI release cadence, accept community contributions without touching the CLI repo, and simplify the superpowers integration. The CLI command interface (flags, exit codes) is stable enough that skills do not need tight version coupling with the binary.
+The plugin is a container for skills, commands, and hooks — expansion into slash commands (e.g., `/synchestra:dispatch`) and event hooks is planned. The split from the CLI repo lets the plugin evolve independently of the CLI release cadence, accept community contributions without touching the CLI repo, and keeps discoverability high by giving the plugin its own repository homepage. See [ADR-0001](https://github.com/synchestra-io/synchestra/blob/main/spec/decisions/0001-extract-ai-plugin.md) for the decision history.
 
 ## Roadmap
 
