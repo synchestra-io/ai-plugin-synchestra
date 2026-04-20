@@ -15,7 +15,7 @@ See [`skills/README.md`](skills/README.md) for the skill catalogue, design princ
 
 ## Install
 
-Via the Synchestra.io meta-marketplace:
+Via the [Synchestra.io meta-marketplace](https://github.com/synchestra-io/ai-marketplace):
 
 ```
 /plugin marketplace add synchestra-io/ai-marketplace
